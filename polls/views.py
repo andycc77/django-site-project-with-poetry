@@ -6,6 +6,11 @@ def index(request):
     args = {
         'name': 'John',
         'age': 21,
-        'vip': True
+        'vip': True,
+        'dc': {
+            'a': 10,
+            'b': 20
+        },
+        'loops': [1, 2, 3, 4]
     }
     return render(request, './polls/index.html', args)
