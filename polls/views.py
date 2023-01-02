@@ -1,16 +1,8 @@
 from django.shortcuts import render
+from .models import TB_1
 
 
 # Create your views here.
 def index(request):
-    args = {
-        'name': 'John',
-        'age': 21,
-        'vip': True,
-        'dc': {
-            'a': 10,
-            'b': 20
-        },
-        'loops': [1, 2, 3, 4]
-    }
-    return render(request, './polls/index.html', args)
+    user_data = TB_1.objects.get(name="Adam")
+    return render(request, './polls/index.html', {'user_data': user_data})
