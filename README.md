@@ -2,10 +2,10 @@
 
 ## Init
 
-### Setup Poetry
+### Install Poetry
 
 ```bash
-poetry init
+poetry install
 ```
 
 This command will guide you through creating your pyproject.toml config.
@@ -16,11 +16,6 @@ This command will guide you through creating your pyproject.toml config.
 poetry add Django
 ```
 
-### Create Django project
-
-```bash
-poetry run django-admin startproject project .
-```
 
 ### Migrations
 
